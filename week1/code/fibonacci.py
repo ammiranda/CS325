@@ -1,3 +1,5 @@
+import time
+
 def fib_recur(n):
    if n == 0:
       return 0
@@ -18,5 +20,4 @@ def fib_iter(n):
 
    return total
 
-print(fib_iter(10))
-print(fib_recur(10))
+
