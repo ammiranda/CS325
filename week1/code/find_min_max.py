@@ -1,7 +1,5 @@
 def find_min_max(arr):
     start_index = None
-    max_val = 0
-    min_val = 101
 
     if len(arr) % 2 == 0:
       if arr[0] > arr[1]:
