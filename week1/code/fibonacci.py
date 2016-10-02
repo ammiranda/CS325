@@ -20,14 +20,12 @@ def fib_iter(n):
 
    return total
 
-times = [5, 10, 15, 20, 30]
-
-for i in times:
+for i in range(5, 31):
   start_time = time.clock()
   fib_recur(i)
-  print("Recur for %d took %f seconds" % (i, time.clock() - start_time))
+  print("Recur for %d took %f ms" % (i, 1000 * (time.clock() - start_time)))
 
-for i in times:
+for i in range(5, 31):
   start_time2 = time.clock()
   fib_iter(i)
-  print("Iter for %d took %f seconds" % (i, time.clock() - start_time2)) 
+  print("Iter for %d took %f ms" % (i, 1000 * (time.clock() - start_time2))) 
