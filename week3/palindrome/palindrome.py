@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def panlindrome(seq):
   n = len(seq)
 
